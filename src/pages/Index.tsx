@@ -1,10 +1,11 @@
 import { useSeoMeta } from '@unhead/react';
 import { useState, useEffect } from 'react';
-import { AdventCalendarTile } from '@/components/AdventCalendarTile';
+import { AdventCalendarTile, type TileState } from '@/components/AdventCalendarTile';
 import { AdventDayModal, DayContent } from '@/components/AdventDayModal';
 import { LoginArea } from '@/components/auth/LoginArea';
 import { useCurrentUser } from '@/hooks/useCurrentUser';
 import { useToast } from '@/hooks/useToast';
+import { useOpenedDays } from '@/hooks/useOpenedDays';
 import { Calendar } from 'lucide-react';
 
 interface AdventData {
@@ -17,6 +18,7 @@ const Index = () => {
   const [isModalOpen, setIsModalOpen] = useState(false);
   const { user } = useCurrentUser();
   const { toast } = useToast();
+  const { isDayOpened, markDayAsOpened } = useOpenedDays();
 
   useSeoMeta({
     title: 'Nostr Advent Calendar 2024',
@@ -25,7 +27,7 @@ const Index = () => {
 
   // Load advent calendar data
   useEffect(() => {
-    fetch('/advent-data.json')
+    fetch('/advent-data.json?v=' + Date.now()) // Cache busting to ensure fresh data
       .then(res => res.json())
       .then(data => setAdventData(data))
       .catch(err => {
@@ -42,12 +44,42 @@ const Index = () => {
   const isDayUnlocked = (unlockDate: string): boolean => {
     const now = new Date();
     const unlock = new Date(unlockDate);
+    // Reset time to compare dates only
+    now.setHours(0, 0, 0, 0);
+    unlock.setHours(0, 0, 0, 0);
     return now >= unlock;
+  };
+
+  // Check if a day is today
+  const isToday = (unlockDate: string): boolean => {
+    const now = new Date();
+    const unlock = new Date(unlockDate);
+    now.setHours(0, 0, 0, 0);
+    unlock.setHours(0, 0, 0, 0);
+    return now.getTime() === unlock.getTime();
+  };
+
+  // Calculate tile state
+  const getTileState = (dayContent: DayContent): TileState => {
+    if (!isDayUnlocked(dayContent.unlockDate)) {
+      return 'locked';
+    }
+    if (isToday(dayContent.unlockDate) && !isDayOpened(dayContent.day)) {
+      return 'today';
+    }
+    if (isDayOpened(dayContent.day)) {
+      return 'opened';
+    }
+    // Past day that hasn't been opened yet - treat as "today" for now
+    // (could be changed to a separate "available" state if needed)
+    return 'today';
   };
 
   const handleTileClick = (dayContent: DayContent) => {
     setSelectedDay(dayContent);
     setIsModalOpen(true);
+    // Mark day as opened when modal is opened
+    markDayAsOpened(dayContent.day);
   };
 
   const handleZap = () => {
@@ -113,7 +145,7 @@ const Index = () => {
             <AdventCalendarTile
               key={day.day}
               day={day.day}
-              isUnlocked={isDayUnlocked(day.unlockDate)}
+              state={getTileState(day)}
               onClick={() => handleTileClick(day)}
             />
           ))}

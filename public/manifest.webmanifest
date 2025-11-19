@@ -1,0 +1,25 @@
+{
+  "name": "Nostr Advent Calendar 2024",
+  "short_name": "Nostr Advent",
+  "description": "Discover something new about Nostr every day this December! A 24-day journey through the decentralized social protocol.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#9333ea",
+  "orientation": "portrait-primary",
+  "icons": [
+    {
+      "src": "/icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "/icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any maskable"
+    }
+  ]
+}
+
