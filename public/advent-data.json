@@ -1,0 +1,196 @@
+{
+  "days": [
+    {
+      "day": 1,
+      "unlockDate": "2024-12-01",
+      "title": "Day 1: Welcome to Nostr Advent!",
+      "description": "Discover the decentralized future of social media. Today we explore the basics of Nostr protocol.",
+      "image": "https://images.pexels.com/photos/3944405/pexels-photo-3944405.jpeg?auto=compress&cs=tinysrgb&w=800",
+      "link": "https://nostr.com"
+    },
+    {
+      "day": 2,
+      "unlockDate": "2024-12-02",
+      "title": "Day 2: Public Key Cryptography",
+      "description": "Learn how Nostr uses public and private keys to create a censorship-resistant network.",
+      "image": "https://images.pexels.com/photos/60504/security-protection-anti-virus-software-60504.jpeg?auto=compress&cs=tinysrgb&w=800",
+      "link": "https://nostr.com"
+    },
+    {
+      "day": 3,
+      "unlockDate": "2024-12-03",
+      "title": "Day 3: Relays Explained",
+      "description": "Understanding how Nostr relays work and why they're essential to the network.",
+      "image": "https://images.pexels.com/photos/1089438/pexels-photo-1089438.jpeg?auto=compress&cs=tinysrgb&w=800",
+      "link": "https://nostr.com"
+    },
+    {
+      "day": 4,
+      "unlockDate": "2024-12-04",
+      "title": "Day 4: NIPs - Nostr Implementation Possibilities",
+      "description": "Explore the proposals that extend Nostr's capabilities.",
+      "image": "https://images.pexels.com/photos/267350/pexels-photo-267350.jpeg?auto=compress&cs=tinysrgb&w=800",
+      "link": "https://nostr.com"
+    },
+    {
+      "day": 5,
+      "unlockDate": "2024-12-05",
+      "title": "Day 5: Lightning Network Integration",
+      "description": "How Nostr integrates with Bitcoin's Lightning Network for instant micropayments.",
+      "image": "https://images.pexels.com/photos/730547/pexels-photo-730547.jpeg?auto=compress&cs=tinysrgb&w=800",
+      "link": "https://nostr.com"
+    },
+    {
+      "day": 6,
+      "unlockDate": "2024-12-06",
+      "title": "Day 6: Zaps ⚡",
+      "description": "Send value instantly with Lightning zaps on Nostr.",
+      "image": "https://images.pexels.com/photos/1143754/pexels-photo-1143754.jpeg?auto=compress&cs=tinysrgb&w=800",
+      "link": "https://nostr.com"
+    },
+    {
+      "day": 7,
+      "unlockDate": "2024-12-07",
+      "title": "Day 7: Client Diversity",
+      "description": "Explore the vibrant ecosystem of Nostr clients and applications.",
+      "image": "https://images.pexels.com/photos/3861969/pexels-photo-3861969.jpeg?auto=compress&cs=tinysrgb&w=800",
+      "link": "https://nostr.com"
+    },
+    {
+      "day": 8,
+      "unlockDate": "2024-12-08",
+      "title": "Day 8: Decentralized Identity",
+      "description": "Your identity belongs to you, not to any platform.",
+      "image": "https://images.pexels.com/photos/4792728/pexels-photo-4792728.jpeg?auto=compress&cs=tinysrgb&w=800",
+      "link": "https://nostr.com"
+    },
+    {
+      "day": 9,
+      "unlockDate": "2024-12-09",
+      "title": "Day 9: Content Moderation",
+      "description": "How Nostr handles moderation while preserving free speech.",
+      "image": "https://images.pexels.com/photos/1181271/pexels-photo-1181271.jpeg?auto=compress&cs=tinysrgb&w=800",
+      "link": "https://nostr.com"
+    },
+    {
+      "day": 10,
+      "unlockDate": "2024-12-10",
+      "title": "Day 10: Communities and Groups",
+      "description": "Building communities on a decentralized protocol.",
+      "image": "https://images.pexels.com/photos/1181396/pexels-photo-1181396.jpeg?auto=compress&cs=tinysrgb&w=800",
+      "link": "https://nostr.com"
+    },
+    {
+      "day": 11,
+      "unlockDate": "2024-12-11",
+      "title": "Day 11: Long-form Content",
+      "description": "Nostr isn't just for short posts - create articles and blogs too!",
+      "image": "https://images.pexels.com/photos/261763/pexels-photo-261763.jpeg?auto=compress&cs=tinysrgb&w=800",
+      "link": "https://nostr.com"
+    },
+    {
+      "day": 12,
+      "unlockDate": "2024-12-12",
+      "title": "Day 12: Media Sharing",
+      "description": "Share images, videos, and files on the decentralized web.",
+      "image": "https://images.pexels.com/photos/3184291/pexels-photo-3184291.jpeg?auto=compress&cs=tinysrgb&w=800",
+      "link": "https://nostr.com"
+    },
+    {
+      "day": 13,
+      "unlockDate": "2024-12-13",
+      "title": "Day 13: Marketplace Applications",
+      "description": "Buy and sell in a peer-to-peer marketplace built on Nostr.",
+      "image": "https://images.pexels.com/photos/230544/pexels-photo-230544.jpeg?auto=compress&cs=tinysrgb&w=800",
+      "link": "https://nostr.com"
+    },
+    {
+      "day": 14,
+      "unlockDate": "2024-12-14",
+      "title": "Day 14: Event Kinds",
+      "description": "Understanding the different types of events on Nostr.",
+      "image": "https://images.pexels.com/photos/1181406/pexels-photo-1181406.jpeg?auto=compress&cs=tinysrgb&w=800",
+      "link": "https://nostr.com"
+    },
+    {
+      "day": 15,
+      "unlockDate": "2024-12-15",
+      "title": "Day 15: Private Messages",
+      "description": "Encrypted messaging without centralized servers.",
+      "image": "https://images.pexels.com/photos/1591060/pexels-photo-1591060.jpeg?auto=compress&cs=tinysrgb&w=800",
+      "link": "https://nostr.com"
+    },
+    {
+      "day": 16,
+      "unlockDate": "2024-12-16",
+      "title": "Day 16: Building on Nostr",
+      "description": "Developer resources and tools for creating Nostr applications.",
+      "image": "https://images.pexels.com/photos/1181467/pexels-photo-1181467.jpeg?auto=compress&cs=tinysrgb&w=800",
+      "link": "https://nostr.com"
+    },
+    {
+      "day": 17,
+      "unlockDate": "2024-12-17",
+      "title": "Day 17: Nostr Badges",
+      "description": "Achievements, credentials, and digital recognition on Nostr.",
+      "image": "https://images.pexels.com/photos/1181605/pexels-photo-1181605.jpeg?auto=compress&cs=tinysrgb&w=800",
+      "link": "https://nostr.com"
+    },
+    {
+      "day": 18,
+      "unlockDate": "2024-12-18",
+      "title": "Day 18: Audio and Podcasting",
+      "description": "Decentralized audio content and podcasting on Nostr.",
+      "image": "https://images.pexels.com/photos/3784221/pexels-photo-3784221.jpeg?auto=compress&cs=tinysrgb&w=800",
+      "link": "https://nostr.com"
+    },
+    {
+      "day": 19,
+      "unlockDate": "2024-12-19",
+      "title": "Day 19: Calendar Events",
+      "description": "Coordinate and share events on a decentralized calendar.",
+      "image": "https://images.pexels.com/photos/1020323/pexels-photo-1020323.jpeg?auto=compress&cs=tinysrgb&w=800",
+      "link": "https://nostr.com"
+    },
+    {
+      "day": 20,
+      "unlockDate": "2024-12-20",
+      "title": "Day 20: Data Portability",
+      "description": "Your data moves with you - true data ownership.",
+      "image": "https://images.pexels.com/photos/1181354/pexels-photo-1181354.jpeg?auto=compress&cs=tinysrgb&w=800",
+      "link": "https://nostr.com"
+    },
+    {
+      "day": 21,
+      "unlockDate": "2024-12-21",
+      "title": "Day 21: Nostr Bridges",
+      "description": "Connecting Nostr with other protocols and platforms.",
+      "image": "https://images.pexels.com/photos/1209978/pexels-photo-1209978.jpeg?auto=compress&cs=tinysrgb&w=800",
+      "link": "https://nostr.com"
+    },
+    {
+      "day": 22,
+      "unlockDate": "2024-12-22",
+      "title": "Day 22: Web of Trust",
+      "description": "Building reputation and trust in a decentralized network.",
+      "image": "https://images.pexels.com/photos/3184357/pexels-photo-3184357.jpeg?auto=compress&cs=tinysrgb&w=800",
+      "link": "https://nostr.com"
+    },
+    {
+      "day": 23,
+      "unlockDate": "2024-12-23",
+      "title": "Day 23: The Future of Nostr",
+      "description": "What's next for the Nostr protocol and ecosystem.",
+      "image": "https://images.pexels.com/photos/3861969/pexels-photo-3861969.jpeg?auto=compress&cs=tinysrgb&w=800",
+      "link": "https://nostr.com"
+    },
+    {
+      "day": 24,
+      "unlockDate": "2024-12-24",
+      "title": "Day 24: Join the Movement",
+      "description": "Be part of building the future of decentralized communication!",
+      "image": "https://images.pexels.com/photos/1181406/pexels-photo-1181406.jpeg?auto=compress&cs=tinysrgb&w=800",
+      "link": "https://nostr.com"
+    }
+  ]
+}
