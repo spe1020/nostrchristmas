@@ -6,10 +6,10 @@
       "title": "Day 1: What Is Nostr?",
       "learn": "Nostr stands for 'Notes and Other Stuff Transmitted by Relays.' It's a simple, open protocol that enables global, decentralized, and censorship-resistant social networking. Unlike traditional platforms, you own your identity and data. Your account is a cryptographic keypair that works across any Nostr client or app.",
       "app": {
-        "url": "https://primal.net"
+        "url": "https://jumble.social"
       },
       "person": {
-        "pubkey": "npub1sg6plzptd64u62a878hep2kev88swjh3tw00gjsfl8f237lmu63q0uf63m"
+        "pubkey": "npub18ams6ewn5aj2n3wt2qawzglx9mr4nzksxhvrdc4gzrecw7n5tvjqctp424"
       }
     },
     {
@@ -21,7 +21,7 @@
         "url": "https://damus.io"
       },
       "person": {
-        "pubkey": "npub1sg6plzptd64u62a878hep2kev88swjh3tw00gjsfl8f237lmu63q0uf63m"
+        "pubkey": "npub1aeh2zw4elewy5682lxc6xnlqzjnxksq303gwu2npfaxd49vmde6qcq4nwx"
       }
     },
     {
@@ -33,7 +33,7 @@
         "url": "https://nostr.watch"
       },
       "person": {
-        "pubkey": "npub1sg6plzptd64u62a878hep2kev88swjh3tw00gjsfl8f237lmu63q0uf63m"
+        "pubkey": "npub1ymt2j3n8tesrlr0yhaheem6yyqmmwrr7actslurw6annls6vnrcslapxnz"
       }
     },
     {
@@ -42,10 +42,10 @@
       "title": "Day 4: NIPs - Nostr Implementation Possibilities",
       "learn": "NIPs (Nostr Implementation Possibilities) are proposals that extend the protocol's capabilities. From basic text notes (NIP-01) to Lightning zaps (NIP-57) and encrypted messages (NIP-04), NIPs document how features work. Anyone can propose a NIP, and the community decides what gets adopted. This open process drives innovation.",
       "app": {
-        "url": "https://github.com/nostr-protocol/nips"
+        "url": "https://yakihonne.com"
       },
       "person": {
-        "pubkey": "npub1sg6plzptd64u62a878hep2kev88swjh3tw00gjsfl8f237lmu63q0uf63m"
+        "pubkey": "npub1h8nk2346qezka5cpm8jjh3yl5j88pf4ly2ptu7s6uu55wcfqy0wq36rpev"
       }
     },
     {
@@ -57,7 +57,7 @@
         "url": "https://getalby.com"
       },
       "person": {
-        "pubkey": "npub1sg6plzptd64u62a878hep2kev88swjh3tw00gjsfl8f237lmu63q0uf63m"
+        "pubkey": "npub1de6l09erjl9r990q7n9ql0rwh8x8n059ht7a267n0q3qe28wua8q20q0sd"
       }
     },
     {
@@ -69,7 +69,7 @@
         "url": "https://zap.stream"
       },
       "person": {
-        "pubkey": "npub1sg6plzptd64u62a878hep2kev88swjh3tw00gjsfl8f237lmu63q0uf63m"
+        "pubkey": "npub1cgcwm56v5hyrrzl5ty4vq4kdud63n5u4czgycdl2r3jshzk55ufqe52ndy"
       }
     },
     {
@@ -78,10 +78,10 @@
       "title": "Day 7: Client Diversity",
       "learn": "Nostr's open protocol enables a diverse ecosystem of clients. From mobile apps like Damus and Amethyst to web clients like Primal and Snort, each offers unique features and interfaces. This diversity means you're never locked into one app. Switch clients anytime while keeping your same identity and data across all of them.",
       "app": {
-        "url": "https://snort.social"
+        "url": "https://zap.cooking"
       },
       "person": {
-        "pubkey": "npub1sg6plzptd64u62a878hep2kev88swjh3tw00gjsfl8f237lmu63q0uf63m"
+        "pubkey": "npub15u3cqhx6vuj3rywg0ph5mfv009lxja6cyvqn2jagaydukq6zmjwqex05rq"
       }
     },
     {
@@ -90,10 +90,10 @@
       "title": "Day 8: Decentralized Identity",
       "learn": "Your Nostr identity is truly yours. Your public key is your permanent identifier that works everywhere, and your private key proves ownership. No email verification, no phone numbers, no corporate approval needed. Your identity persists across clients, relays, and time. This is true self-sovereign identity in action.",
       "app": {
-        "url": "https://iris.to"
+        "url": "https://nostrudel.ninja"
       },
       "person": {
-        "pubkey": "npub1sg6plzptd64u62a878hep2kev88swjh3tw00gjsfl8f237lmu63q0uf63m"
+        "pubkey": "npub1q7why7lw8kq9ufr43ps75ngz3vhx5duqt7xmgklcq3dljqqfjegq2km2vr"
       }
     },
     {
@@ -102,10 +102,10 @@
       "title": "Day 9: Content Moderation",
       "learn": "Nostr handles moderation through client-side filtering and relay policies, not centralized bans. You control what you see through mute lists, keyword filters, and relay selection. Relays can set their own policies, and you can choose relays that match your preferences. This approach preserves free speech while giving users control over their experience.",
       "app": {
-        "url": "https://nostr.band"
+        "url": "https://flotilla.social"
       },
       "person": {
-        "pubkey": "npub1sg6plzptd64u62a878hep2kev88swjh3tw00gjsfl8f237lmu63q0uf63m"
+        "pubkey": "npub1l8tlpvn3kka3nm2qpk96amsuy2kr5kl9eusd54fpn3yjnefrnpaq2j5t9v"
       }
     },
     {
@@ -117,7 +117,7 @@
         "url": "https://highlighter.com"
       },
       "person": {
-        "pubkey": "npub1sg6plzptd64u62a878hep2kev88swjh3tw00gjsfl8f237lmu63q0uf63m"
+        "pubkey": "npub1aesr9ql7h3xrrvyeqvujgz9zllca4a56cgjy5hj26plv5w78nhkq2m0d2r"
       }
     },
     {
@@ -129,7 +129,7 @@
         "url": "https://habla.news"
       },
       "person": {
-        "pubkey": "npub1sg6plzptd64u62a878hep2kev88swjh3tw00gjsfl8f237lmu63q0uf63m"
+        "pubkey": "npub1el3mgvtdjpfntdkwq446pmprpdv85v6rs85zh7dq9gvy7tgx37xs2kl27r"
       }
     },
     {
@@ -138,10 +138,10 @@
       "title": "Day 12: Media Sharing",
       "learn": "Nostr supports rich media through NIP-94 file attachments. Images, videos, and files can be attached to events using imeta tags that include URLs, MIME types, and alt text. Media is typically hosted on decentralized storage or specialized servers. This enables rich content sharing while maintaining the protocol's decentralized nature.",
       "app": {
-        "url": "https://void.cat"
+        "url": "https://nostrnests.com"
       },
       "person": {
-        "pubkey": "npub1sg6plzptd64u62a878hep2kev88swjh3tw00gjsfl8f237lmu63q0uf63m"
+        "pubkey": "npub1e3mx09yq53gyh9368qyuhfstgk8t7p5vvfcnvgwa4994y7rqg37s20qvr5"
       }
     },
     {
@@ -150,10 +150,10 @@
       "title": "Day 13: Marketplace Applications",
       "learn": "Nostr's flexible event system enables marketplace applications where users can buy and sell goods peer-to-peer. These marketplaces use specialized event kinds to list products, handle transactions, and manage reputation. Combined with Lightning payments, Nostr marketplaces enable direct commerce without intermediaries, fees, or platform lock-in.",
       "app": {
-        "url": "https://nostr.market"
+        "url": "https://nosotros.app"
       },
       "person": {
-        "pubkey": "npub1sg6plzptd64u62a878hep2kev88swjh3tw00gjsfl8f237lmu63q0uf63m"
+        "pubkey": "npub16secklpnqey3el04fy2drfftsz5k26zlwdsnz84wtul2luwj8fdsugjdxk"
       }
     },
     {
@@ -162,10 +162,10 @@
       "title": "Day 14: Event Kinds",
       "learn": "Nostr events are categorized by 'kinds' - numbers that define the event type. Kind 1 is a text note, kind 0 is profile metadata, kind 3 is a contact list. Higher numbers enable specialized features like articles (30023), marketplace listings (30402), and calendar events (31922). This extensible system allows unlimited innovation while maintaining compatibility.",
       "app": {
-        "url": "https://nostr.com"
+        "url": "https://snort.social"
       },
       "person": {
-        "pubkey": "npub1sg6plzptd64u62a878hep2kev88swjh3tw00gjsfl8f237lmu63q0uf63m"
+        "pubkey": "npub16eumpaxffppswucpeysysrya9uk39j06d5gr2tsnf6cupq3f4jdqyft6jc"
       }
     },
     {
@@ -177,7 +177,7 @@
         "url": "https://coracle.social"
       },
       "person": {
-        "pubkey": "npub1sg6plzptd64u62a878hep2kev88swjh3tw00gjsfl8f237lmu63q0uf63m"
+        "pubkey": "npub1dgpt04w4c88wc0g262xaw8zvlm4mvwtmjhl0tn2sxtyjywsn6q4qt8ka3a"
       }
     },
     {
@@ -186,10 +186,10 @@
       "title": "Day 16: Building on Nostr",
       "learn": "Building on Nostr is straightforward. The protocol is simple, with events, relays, and cryptographic signatures as core concepts. Developers can create clients, relays, or applications using any programming language. The open protocol and extensive NIP documentation make it easy to build innovative applications that integrate with the entire Nostr ecosystem.",
       "app": {
-        "url": "https://nostr.dev"
+        "url": "https://www.keychat.io"
       },
       "person": {
-        "pubkey": "npub1sg6plzptd64u62a878hep2kev88swjh3tw00gjsfl8f237lmu63q0uf63m"
+        "pubkey": "npub12z8jsett3k6rv9fa2guau5p540qr2xuvjzkr8e432mglafjt99sqkw9zmx"
       }
     },
     {
@@ -201,7 +201,7 @@
         "url": "https://badges.page"
       },
       "person": {
-        "pubkey": "npub1sg6plzptd64u62a878hep2kev88swjh3tw00gjsfl8f237lmu63q0uf63m"
+        "pubkey": "npub12gu8c6uee3p243gez6cgk76362admlqe72aq3kp2fppjsjwmm7eqj9fle6"
       }
     },
     {
@@ -213,7 +213,7 @@
         "url": "https://wavlake.com"
       },
       "person": {
-        "pubkey": "npub1sg6plzptd64u62a878hep2kev88swjh3tw00gjsfl8f237lmu63q0uf63m"
+        "pubkey": "npub1nl8r463jkdtr0qu0k3dht03jt9t59cttk0j8gtxg9wea2russlnq2zf9d0"
       }
     },
     {
@@ -222,10 +222,10 @@
       "title": "Day 19: Calendar Events",
       "learn": "Nostr calendar events (NIP-52) enable decentralized event coordination. You can create, share, and RSVP to events directly on Nostr. Events include dates, locations, descriptions, and can be referenced by other events. This creates a decentralized calendar system where events are owned by creators, not platforms.",
       "app": {
-        "url": "https://cal.com"
+        "url": "https://cornychat.com"
       },
       "person": {
-        "pubkey": "npub1sg6plzptd64u62a878hep2kev88swjh3tw00gjsfl8f237lmu63q0uf63m"
+        "pubkey": "npub1yx6pjypd4r7qh2gysjhvjd9l2km6hnm4amdnjyjw3467fy05rf0qfp7kza"
       }
     },
     {
@@ -234,10 +234,10 @@
       "title": "Day 20: Data Portability",
       "learn": "True data portability is built into Nostr. Your events are stored on relays, and you can export them anytime. Switch clients, change relays, or run your own relay - your data moves with you. This is the opposite of platform lock-in. Your social graph, posts, and relationships are truly yours to take anywhere.",
       "app": {
-        "url": "https://nostr.directory"
+        "url": "https://hivetalk.org"
       },
       "person": {
-        "pubkey": "npub1sg6plzptd64u62a878hep2kev88swjh3tw00gjsfl8f237lmu63q0uf63m"
+        "pubkey": "npub1hgvtv4zn2l8l3ef34n87r4sf5s00xq3lhgr3mvwt7kn8gjxpjprqc89jnv"
       }
     },
     {
@@ -246,10 +246,10 @@
       "title": "Day 21: Nostr Bridges",
       "learn": "Nostr bridges connect the protocol with other platforms and protocols. Bridges can import content from Twitter, RSS feeds, or other sources, making them available on Nostr. They can also export Nostr content elsewhere. This interoperability expands Nostr's reach while maintaining the protocol's decentralized core.",
       "app": {
-        "url": "https://nostr.band"
+        "url": "https://treasures.to"
       },
       "person": {
-        "pubkey": "npub1sg6plzptd64u62a878hep2kev88swjh3tw00gjsfl8f237lmu63q0uf63m"
+        "pubkey": "npub1vwymuey3u7mf860ndrkw3r7dz30s0srg6tqmhtjzg7umtm6rn5eq2qzugd"
       }
     },
     {
@@ -258,10 +258,10 @@
       "title": "Day 22: Web of Trust",
       "learn": "Nostr enables a web of trust through follows, contact lists, and social connections. Your contact list (kind 3) defines who you trust, and clients can use this to filter content. This creates organic trust networks where reputation emerges from relationships, not algorithms. Trust is distributed, not centralized.",
       "app": {
-        "url": "https://nostr.com"
+        "url": "https://www.fountain.fm"
       },
       "person": {
-        "pubkey": "npub1sg6plzptd64u62a878hep2kev88swjh3tw00gjsfl8f237lmu63q0uf63m"
+        "pubkey": "npub1zafcms4xya5ap9zr7xxr0jlrtrattwlesytn2s42030lzu0dwlzqpd26k5"
       }
     },
     {
@@ -270,10 +270,10 @@
       "title": "Day 23: The Future of Nostr",
       "learn": "Nostr's future is shaped by its community. New NIPs are proposed regularly, expanding capabilities. The protocol's simplicity and openness enable rapid innovation. As adoption grows, we'll see more clients, relays, and applications. The future is decentralized, interoperable, and user-controlled. Nostr is just getting started.",
       "app": {
-        "url": "https://nostr.com"
+        "url": "https://yakbak.app"
       },
       "person": {
-        "pubkey": "npub1sg6plzptd64u62a878hep2kev88swjh3tw00gjsfl8f237lmu63q0uf63m"
+        "pubkey": "npub1f5pre6wl6ad87vr4hr5wppqq30sh58m4p33mthnjreh03qadcajs7gwt3z"
       }
     },
     {
@@ -282,10 +282,10 @@
       "title": "Day 24: Join the Movement",
       "learn": "Nostr is more than a protocol - it's a movement toward decentralized, user-controlled social networking. Join by creating an account, exploring clients, following interesting people, and contributing to the ecosystem. Whether you're a user, developer, or creator, there's a place for you. Welcome to the future of social media.",
       "app": {
-        "url": "https://nostr.com"
+        "url": "https://shopstr.store"
       },
       "person": {
-        "pubkey": "npub1sg6plzptd64u62a878hep2kev88swjh3tw00gjsfl8f237lmu63q0uf63m"
+        "pubkey": "npub1rjwumr7j6tac08t0qttvc44walt549nc4eyyxjc0phn6yxzj7uzq0accc9"
       }
     }
   ]

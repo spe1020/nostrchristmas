@@ -7,6 +7,10 @@ import { useCurrentUser } from '@/hooks/useCurrentUser';
 import { useToast } from '@/hooks/useToast';
 import { useOpenedDays } from '@/hooks/useOpenedDays';
 import { Calendar } from 'lucide-react';
+import { Snowfall } from '@/components/Snowfall';
+import { ChristmasLights } from '@/components/ChristmasLights';
+import { WinterNightBackground } from '@/components/WinterNightBackground';
+import { ProgressLights } from '@/components/ProgressLights';
 
 interface AdventData {
   days: DayContent[];
@@ -92,28 +96,37 @@ const Index = () => {
 
   if (!adventData) {
     return (
-      <div className="min-h-screen flex items-center justify-center bg-gradient-to-br from-purple-50 via-pink-50 to-blue-50 dark:from-gray-900 dark:via-purple-950 dark:to-gray-900">
+      <div className="min-h-screen flex items-center justify-center bg-gradient-to-br from-slate-900 via-indigo-950 to-slate-900 dark:from-slate-950 dark:via-indigo-950 dark:to-slate-950">
         <div className="text-center">
-          <div className="animate-spin rounded-full h-12 w-12 border-b-2 border-purple-600 mx-auto mb-4"></div>
-          <p className="text-gray-600 dark:text-gray-400">Loading advent calendar...</p>
+          <div className="animate-spin rounded-full h-12 w-12 border-b-2 border-purple-400 mx-auto mb-4"></div>
+          <p className="text-gray-300 dark:text-gray-400">Loading advent calendar...</p>
         </div>
       </div>
     );
   }
 
+  // Check if any days are unlocked
+  const hasUnlockedDays = adventData.days.some(day => isDayUnlocked(day.unlockDate));
+
   return (
-    <div className="min-h-screen bg-gradient-to-br from-purple-50 via-pink-50 to-blue-50 dark:from-gray-900 dark:via-purple-950 dark:to-gray-900">
+    <div className="min-h-screen bg-gradient-to-br from-slate-900 via-indigo-950 to-slate-900 dark:from-slate-950 dark:via-indigo-950 dark:to-slate-950 relative">
+      {/* Winter Night Background Effects */}
+      <WinterNightBackground />
+      
+      {/* Snowfall Effect */}
+      <Snowfall hasUnlockedDays={hasUnlockedDays} />
+      
       {/* Header */}
-      <header className="border-b border-purple-200 dark:border-purple-800 bg-white/50 dark:bg-gray-900/50 backdrop-blur-sm sticky top-0 z-10">
+      <header className="border-b border-indigo-800/30 dark:border-indigo-700/30 bg-slate-900/60 dark:bg-slate-950/60 backdrop-blur-md sticky top-0 z-10">
         <div className="container mx-auto px-4 py-4">
           <div className="flex items-center justify-between">
             <div className="flex items-center gap-3">
-              <Calendar className="w-8 h-8 text-purple-600" />
+              <Calendar className="w-8 h-8 text-purple-400" />
               <div>
-                <h1 className="text-2xl font-bold bg-gradient-to-r from-purple-600 to-pink-600 bg-clip-text text-transparent">
+                <h1 className="text-2xl font-bold bg-gradient-to-r from-purple-400 via-pink-400 to-blue-400 bg-clip-text text-transparent">
                   Nostr Advent Calendar
                 </h1>
-                <p className="text-sm text-gray-600 dark:text-gray-400">December 2024</p>
+                <p className="text-sm text-gray-300 dark:text-gray-400">December 2024</p>
               </div>
             </div>
             <LoginArea className="max-w-60" />
@@ -125,14 +138,15 @@ const Index = () => {
       <main className="container mx-auto px-4 py-12">
         {/* Welcome Section */}
         <div className="text-center mb-12 space-y-4">
-          <h2 className="text-4xl md:text-5xl font-bold text-gray-900 dark:text-white">
+          <ChristmasLights />
+          <h2 className="text-4xl md:text-5xl font-bold text-white dark:text-white">
             Discover Nostr This December
           </h2>
-          <p className="text-xl text-gray-600 dark:text-gray-300 max-w-2xl mx-auto">
+          <p className="text-xl text-gray-200 dark:text-gray-300 max-w-2xl mx-auto">
             Unlock a new insight about the decentralized social protocol every day leading up to Christmas!
           </p>
           {user && (
-            <p className="text-sm text-purple-600 dark:text-purple-400 flex items-center justify-center gap-2">
+            <p className="text-sm text-purple-300 dark:text-purple-400 flex items-center justify-center gap-2">
               <span className="inline-block w-2 h-2 bg-green-500 rounded-full animate-pulse"></span>
               Logged in as Nostr user - Send zaps to support content creators!
             </p>
@@ -153,10 +167,14 @@ const Index = () => {
 
         {/* Footer Info */}
         <div className="mt-16 text-center space-y-4">
-          <p className="text-gray-600 dark:text-gray-400">
+          <p className="text-gray-300 dark:text-gray-400">
             {adventData.days.filter(d => isDayUnlocked(d.unlockDate)).length} of 24 days unlocked
           </p>
-          <p className="text-sm text-gray-500 dark:text-gray-500">
+          <ProgressLights 
+            unlockedCount={adventData.days.filter(d => isDayUnlocked(d.unlockDate)).length}
+            totalDays={24}
+          />
+          <p className="text-sm text-gray-400 dark:text-gray-500">
             Built with ❤️ on Nostr
           </p>
         </div>

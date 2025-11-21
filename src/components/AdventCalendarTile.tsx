@@ -1,5 +1,7 @@
 import { cn } from '@/lib/utils';
 import { Lock, Check } from 'lucide-react';
+import { useState } from 'react';
+import { LockedTileParticles } from '@/components/LockedTileParticles';
 
 export type TileState = 'locked' | 'today' | 'opened';
 
@@ -11,6 +13,7 @@ interface AdventCalendarTileProps {
 
 export function AdventCalendarTile({ day, state, onClick }: AdventCalendarTileProps) {
   const isClickable = state !== 'locked';
+  const [isHovered, setIsHovered] = useState(false);
 
   // Base styles for all tiles
   const base = cn(
@@ -26,6 +29,11 @@ export function AdventCalendarTile({ day, state, onClick }: AdventCalendarTilePr
       "cursor-not-allowed opacity-50",
       "backdrop-blur-[2px]",
       "brightness-75",
+      // Hover glow for locked tiles
+      "hover:opacity-70 hover:brightness-90",
+      "hover:border-purple-400/50 dark:hover:border-purple-500/50",
+      "hover:shadow-lg hover:shadow-purple-500/20 dark:hover:shadow-purple-500/30",
+      "hover:ring-2 hover:ring-purple-400/30 dark:hover:ring-purple-500/30",
     ],
     state === 'today' && [
       "bg-gradient-to-br from-purple-500 to-pink-500",
@@ -57,6 +65,8 @@ export function AdventCalendarTile({ day, state, onClick }: AdventCalendarTilePr
     <button
       onClick={isClickable ? onClick : undefined}
       disabled={!isClickable}
+      onMouseEnter={() => setIsHovered(true)}
+      onMouseLeave={() => setIsHovered(false)}
       className={cn(base, stylesByState, hover, active)}
     >
       {/* Day Number */}
@@ -88,6 +98,9 @@ export function AdventCalendarTile({ day, state, onClick }: AdventCalendarTilePr
           )} />
         </div>
       )}
+
+      {/* Soft particles for locked tiles on hover */}
+      {state === 'locked' && <LockedTileParticles isHovered={isHovered} />}
     </button>
   );
 }
