@@ -26,40 +26,40 @@ function lightningAddressToLnurl(lightningAddress: string): string {
 // Fetch invoice from LNURL
 async function fetchInvoice(lightningAddress: string, amount: number, comment?: string): Promise<string> {
   const lnurl = lightningAddressToLnurl(lightningAddress);
-  
+
   // Step 1: Fetch LNURL endpoint
   const response = await fetch(lnurl);
   if (!response.ok) {
     throw new Error('Failed to fetch LNURL endpoint');
   }
-  
+
   const data = await response.json();
-  
+
   if (data.status === 'ERROR') {
     throw new Error(data.reason || 'LNURL error');
   }
-  
+
   // Step 2: Request invoice
   const callbackUrl = data.callback;
   const amountMillisats = amount * 1000;
-  
+
   const invoiceUrl = new URL(callbackUrl);
   invoiceUrl.searchParams.set('amount', amountMillisats.toString());
   if (comment) {
     invoiceUrl.searchParams.set('comment', comment);
   }
-  
+
   const invoiceResponse = await fetch(invoiceUrl.toString());
   if (!invoiceResponse.ok) {
     throw new Error('Failed to fetch invoice');
   }
-  
+
   const invoiceData = await invoiceResponse.json();
-  
+
   if (invoiceData.status === 'ERROR') {
     throw new Error(invoiceData.reason || 'Failed to generate invoice');
   }
-  
+
   return invoiceData.pr; // pr = payment request (invoice)
 }
 
@@ -72,7 +72,7 @@ export function ChristmasGiftButton() {
   const [isLoading, setIsLoading] = useState(false);
   const [isPaying, setIsPaying] = useState(false);
   const [copied, setCopied] = useState(false);
-  
+
   const { toast } = useToast();
   const { webln, activeNWC } = useWallet();
   const { sendPayment } = useNWC();
@@ -196,10 +196,12 @@ export function ChristmasGiftButton() {
       <Button
         onClick={handleOpen}
         variant="outline"
-        className="bg-gradient-to-r from-red-500 to-green-500 hover:from-red-600 hover:to-green-600 text-white border-0 shadow-lg"
+        size="sm"
+        className="bg-gradient-to-r from-red-500 to-green-500 hover:from-red-600 hover:to-green-600 text-white border-0 shadow-lg whitespace-nowrap text-sm sm:text-base px-3 sm:px-4"
       >
-        <Gift className="w-4 h-4 mr-2" />
-        🎁 Christmas Gift
+        <Gift className="w-3.5 h-3.5 sm:w-4 sm:h-4 mr-1.5 sm:mr-2" />
+        <span className="hidden xs:inline">🎁 Christmas Gift</span>
+        <span className="xs:hidden">🎁 Gift</span>
       </Button>
 
       <Dialog open={open} onOpenChange={setOpen}>
